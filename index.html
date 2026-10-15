@@ -1,0 +1,265 @@
+<DOCTYPE html>
+<html lang!="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#990018">
+  <meta name="description" content="Site des supporters de l'Espérance Sportive de Tunis : joueurs, histoire et identité du club.">
+  <title>EST | Espérance Sportive de Tunis</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a class="logo" href="#accueil">
+      <span class="logo-mark">EST</span>
+      <span>ESPERANCE<span class="logo-small">SPORTIVE DE TUNIS</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menu-toggle"
+      aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+
+    <nav id="nav-menu">
+      <a href="#accueil">Accueil</a>
+      <a href="#presentation">Présentation</a>
+      <a href="#joueurs">Joueurs</a>
+      <a href="#president">Président</a>
+      <a href="#histoire">Histoire</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-content">
+        <span class="tag">DEPUIS 1919 • TUNIS, TUNISIE</span>
+        <h1>ESPERANCE<br><span>SPORTIVE</span><br>DE TUNIS</h1>
+        <p>
+          Rouge et jaune, une histoire, une passion,
+          une famille : la Mkachkha.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#presentation">
+            Découvrir le club
+          </a>
+          <a class="btn btn-outline" href="#joueurs">
+            Voir les joueurs
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-emblem" aria-label="EST, rouge et jaune">
+        <div class="emblem-inner">
+          <span>1919</span>
+          <strong>EST</strong>
+          <small>TUNIS</small>
+        </div>
+      </div>
+      <div class="hero-bottom">LA PASSION NE S'ÉTEINT JAMAIS.</div>
+    </section>
+
+    <section class="section" id="presentation">
+      <div class="section-heading">
+        <span class="eyebrow">BIENVENUE À L'EST</span>
+        <h2>Présentation du <span>club</span></h2>
+        <p>Une institution historique du football tunisien et africain.</p>
+      </div>
+
+      <div class="stats-grid">
+        <article class="stat-card">
+          <span class="stat-icon">📅</span>
+          <strong>1919</strong>
+          <span>Année de fondation</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon">🔴🟡</span>
+          <strong>Rouge & jaune</strong>
+          <span>Couleurs du club</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon">🏟️</span>
+          <strong>Radès</strong>
+          <span>Stade Hammadi-Agrebi</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-icon">🦁</span>
+          <strong>Mkachkha</strong>
+          <span>Surnom populaire</span>
+        </article>
+      </div>
+
+      <div class="info-panel">
+        <div class="info-decoration">EST</div>
+        <div>
+          <h3>Plus qu'un club</h3>
+          <p>
+            L'Espérance Sportive de Tunis est un club omnisports fondé
+            le 15 janvier 1919 à Tunis. Sa section football est connue
+            pour son histoire, ses titres et le soutien fidèle de ses
+            supporters en Tunisie et à travers l'Afrique.
+          </p>
+          <a class="text-link" href="https://www.est.org.tn/en/history"
+             target="_blank" rel="noopener noreferrer">
+            Consulter l'histoire officielle ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section players-section" id="joueurs">
+      <div class="section-heading">
+        <span class="eyebrow">L'ÉQUIPE</span>
+        <h2>Nos <span>joueurs</span></h2>
+        <p>Quelques joueurs de l'effectif référencé pour la saison 2026-2027.</p>
+      </div>
+
+      <div class="player-tools">
+        <input id="player-search" type="search"
+          placeholder="Rechercher un joueur..."
+          aria-label="Rechercher un joueur">
+
+        <select id="position-filter" aria-label="Filtrer par poste">
+          <option value="all">Tous les postes</option>
+          <option value="Gardien">Gardiens</option>
+          <option value="Défenseur">Défenseurs</option>
+          <option value="Milieu">Milieux</option>
+          <option value="Attaquant">Attaquants</option>
+        </select>
+      </div>
+
+      <p class="results-count" id="results-count" aria-live="polite"></p>
+      <div class="players-grid" id="players-grid"></div>
+
+      <p class="notice">
+        Effectif susceptible de changer pendant la saison.
+        Consulte la source pour vérifier les dernières compositions.
+      </p>
+      <a class="text-link"
+        href="https://www.est.org.tn/"
+        target="_blank" rel="noopener noreferrer">
+        Site officiel de l'EST ↗
+      </a>
+    </section>
+
+    <section class="section president-section" id="president">
+      <div class="section-heading">
+        <span class="eyebrow">LA DIRECTION</span>
+        <h2>Le <span>président</span></h2>
+      </div>
+
+      <div class="president-card">
+        <div class="president-avatar" aria-hidden="true">HM</div>
+        <div class="president-info">
+          <span class="tag">PRÉSIDENT DU CLUB</span>
+          <h3>Hamdi Meddeb</h3>
+          <p>
+            Hamdi Meddeb dirige l'Espérance Sportive de Tunis depuis
+            2007, selon la page historique officielle du club.
+          </p>
+          <a class="text-link"
+            href="https://www.est.org.tn/en/history"
+            target="_blank" rel="noopener noreferrer">
+            Source officielle ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section history-section" id="histoire">
+      <div class="section-heading">
+        <span class="eyebrow">NOTRE HÉRITAGE</span>
+        <h2>L'histoire de <span>l'Espérance</span></h2>
+        <p>Une histoire qui commence à Tunis et continue de s'écrire.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="year">1919</span>
+          <div>
+            <h3>La naissance du club</h3>
+            <p>
+              Le club est officiellement fondé le 15 janvier 1919
+              à Tunis, autour du Café de l'Espérance.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="year">1942</span>
+          <div>
+            <h3>Premier championnat</h3>
+            <p>
+              L'EST remporte son premier titre de champion de Tunisie
+              en football.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="year">1994</span>
+          <div>
+            <h3>Première Ligue des champions africaine</h3>
+            <p>
+              L'Espérance remporte sa première Ligue des champions
+              de la CAF.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="year">2011</span>
+          <div>
+            <h3>Une nouvelle consécration africaine</h3>
+            <p>
+              Le club remporte une deuxième Ligue des champions
+              de la CAF.
+            </p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="year">2018–2019</span>
+          <div>
+            <h3>Deux sacres consécutifs</h3>
+            <p>
+              L'EST remporte la Ligue des champions en 2018 puis
+              en 2019, année de son centenaire.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <a class="text-link"
+        href="https://www.est.org.tn/en/history"
+        target="_blank" rel="noopener noreferrer">
+        Lire l'histoire complète sur le site officiel ↗
+      </a>
+    </section>
+
+    <section class="final-message">
+      <span class="eyebrow">UNE PASSION ÉTERNELLE</span>
+      <h2>Un club. Une famille. <span>Une légende.</span></h2>
+      <p>
+        Depuis 1919, l'Espérance Sportive de Tunis représente une
+        grande page du sport tunisien. Ses couleurs rouge et jaune,
+        son histoire et ses supporters forment une identité transmise
+        de génération en génération. Des tribunes aux terrains,
+        la Mkachkha continue de porter ses ambitions avec fierté,
+        solidarité et passion.
+      </p>
+      <a class="btn btn-primary" href="#accueil">Retour en haut ↑</a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo footer-logo" href="#accueil">
+      <span class="logo-mark">EST</span>
+      <span>ESPERANCE<span class="logo-small">SPORTIVE DE TUNIS</span></span>
+    </a>
+    <p>Rouge et jaune pour toujours ❤️💛</p>
+    <small>Site de présentation réalisé par un supporter. Non officiel.</small>
+    <small>© <span id="current-year"></span> — Tous droits réservés.</small>
+  </footer>
+
+</body>
+</html>
